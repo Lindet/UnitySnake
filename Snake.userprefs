@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameLogic.cs">
+    <Files>
+      <File FileName="Assets\GameLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets\SnakeBody.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameLogic.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint hitAction="PrintExpression" traceExpression="{obj}" file="C:\Users\user\Dropbox\Snake\Assets\SnakeBody.cs" line="70" />
+      <Breakpoint file="C:\Users\Lindet\Dropbox\Snake\Assets\GameLogic.cs" line="45" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets\GameLogic.cs" line="6" offsetX="597" offsetY="85" expression="GlobalVariables.topWall" liveUpdate="False" />
+    <Watch file="Assets\GameLogic.cs" line="31" offsetX="756" offsetY="486" expression="tempObj" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
