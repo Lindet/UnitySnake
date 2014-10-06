@@ -9,7 +9,7 @@ using System;
 
 public class SnakeBody : MonoBehaviour
 {
-    private GlobalVar globals;
+    private GlobalVar globals = GlobalVar.Instance;
 
 	public static UnityEngine.Object Prefab;
     public static UnityEngine.Object HeadPrefab;
@@ -25,13 +25,9 @@ public class SnakeBody : MonoBehaviour
     private SpriteRenderer DeadScreen;
 
 	float timer;
-
-
     // Use this for initialization
-	void Start ()
+	void StartGame ()
 	{
-
-	    globals = GlobalVar.Instance;
 		using (var sw = new StreamWriter("GameLog.txt", true)) {
             sw.WriteLine("BottomWall : " + globals.bottomWall + ". RightWall : " + globals.rightWall + ". TopWall : " + globals.topWall + ". LeftWall : " + globals.leftWall);
 				}
@@ -53,6 +49,8 @@ public class SnakeBody : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+        if (globals.InTheMenu) return;
+        if (globals.SnakeBody == null) StartGame();
 	    if (globals.SnakeIsDead) return;
 
 	        if (_haveKey) return;
@@ -88,6 +86,7 @@ public class SnakeBody : MonoBehaviour
 
 	void FixedUpdate()
 	{
+        if (globals.InTheMenu) return;
 	    if (globals.SnakeIsDead)
 	    {
             if (_deadAnimationTimer == 0) DeadScreen.enabled = true;

@@ -2,7 +2,15 @@ fileFormatVersion: 2
 guid: c905869d46567d74189e16c31e165c35
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _skin: {instanceID: 0}
+  - MenuBack: {fileID: 2800000, guid: 27e50d684de006b46b082c947c6294a4, type: 3}
+  - MainCam: {instanceID: 0}
+  - LeftBorder: {instanceID: 0}
+  - TopBorder: {instanceID: 0}
+  - RightBorder: {instanceID: 0}
+  - BottomBorder: {instanceID: 0}
+  - ScoreTopBorder: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
