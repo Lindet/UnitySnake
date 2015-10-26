@@ -98,7 +98,7 @@ public class SnakeBody : MonoBehaviour
                 }
                 foreach (var item in globals.SnakeBody)
                 {
-                    item.renderer.material.color = Color.red;
+                    item.GetComponent<Renderer>().material.color = Color.red;
                 }
                 _deadAnimationTimer--;
             }
@@ -110,7 +110,7 @@ public class SnakeBody : MonoBehaviour
                 }
                 foreach (var item in globals.SnakeBody)
                 {
-                    item.renderer.material.color = Color.white;
+                    item.GetComponent<Renderer>().material.color = Color.white;
                 }
                 _deadAnimationTimer--;
             }
